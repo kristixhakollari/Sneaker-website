@@ -1,0 +1,38 @@
+[
+    {
+        "cid" : "nike",
+        "name" : "Nike",
+        "No_of_products" : 2,
+        "product1" : "Air Force 1 '07",
+        "product2" : "Air Max 270",
+        "product3" : "",
+        "product1_link" : "products.php?pid=201",
+        "product2_link" : "products.php?pid=202",
+        "product3_link" : "",
+        "img" : "img/nike.jpeg"
+    },
+    {
+        "cid" : "adidas",
+        "name" : "Adidas",
+        "No_of_products" : 3,
+        "product1": "Stan smith",
+        "product2": "Samba",
+        "product3": "Gazelle",
+        "product1_link" : "products.php?pid=101",
+        "product2_link" : "products.php?pid=102",
+        "product3_link" : "products.php?pid=103",
+        "img": "img/adidas.jpeg"
+    },
+    {
+        "cid" : "puma",
+        "name" : "Puma",
+        "No_of_products" : 1,
+        "product1" : "Roma",
+        "product2" : "",
+        "product3" : "",
+        "product1_link" : "products.php?pid=301",
+        "product2_link" : "",
+        "product3_link" : "",
+        "img": "img/puma.jpeg"
+    }
+]

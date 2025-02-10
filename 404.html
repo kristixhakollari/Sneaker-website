@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Shoe Not Found</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .error-container {
+            text-align: center;
+        }
+        h1 {
+            font-size: 3rem;
+            color: #ff5733;
+        }
+        p {
+            font-size: 1.2rem;
+            color: #333;
+        }
+        a {
+            text-decoration: none;
+            color: #ff5733;
+            font-weight: bold;
+            margin-top: 10px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div class="error-container">
+        <svg width="300" height="200" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <!-- Shoe Base -->
+            <rect x="50" y="120" width="300" height="50" rx="25" ry="25" fill="#FF5733" />
+            
+            <!-- Shoe Sole -->
+            <rect x="55" y="165" width="290" height="20" rx="10" ry="10" fill="#333" />
+            
+            <!-- Laces -->
+            <line x1="90" y1="130" x2="150" y2="150" stroke="#FFF" stroke-width="5" />
+            <line x1="150" y1="130" x2="210" y2="150" stroke="#FFF" stroke-width="5" />
+            <line x1="210" y1="130" x2="270" y2="150" stroke="#FFF" stroke-width="5" />
+            
+            <!-- "404" Text on Shoe -->
+            <text x="100" y="145" fill="#FFF" font-size="24" font-family="Arial" font-weight="bold">
+                404
+            </text>
+        </svg>
+        <h1>Oops! Shoe Not Found</h1>
+        <p>It seems the page you're looking for walked away.</p>
+        <a href="http://localhost/step-x/">Go Back to Home</a>
+    </div>
+</body>
+</html>

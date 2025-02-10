@@ -1,0 +1,395 @@
+/* Override */
+.ProductBody {
+    padding-bottom: 50px;
+    height: unset;
+}
+
+.BoxForContents {
+    min-width: unset !important;
+    max-width: 1200px !important;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+
+/* Desktop View */
+@media screen and (min-width: 720px) {
+    .BoxForContents {
+        width: 90% !important;
+    }
+
+    .ProductImg img {
+        height: 650px;
+        width: 440px;
+        border-radius: 10px;
+        object-fit: cover;
+    }
+}
+
+/* Mobile View */
+@media screen and (max-width: 719px) {
+    .BoxForContents {
+        width: 100% !important;
+        padding: 10px 2px !important;
+    }
+
+    .ProductTable td {
+        display: block;
+    }
+
+    .ProductImg img {
+        height: 475px;
+        width: 90%;
+        border-radius: 10px;
+        object-fit: cover;
+    }
+
+    .ProductForm table td {
+        display: inline-block;
+    }
+}
+
+
+/* Others */
+.ProductInfo {
+    padding: 10px;
+
+    display: block;
+    /*Override */
+    text-align: justify;
+
+    font-size: 20px;
+}
+
+.ProductForm {
+    margin: 10px auto auto auto;
+}
+
+.ProductForm table {
+    font-size: unset;
+    font-weight: 500;
+}
+
+.ProductForm table td {
+    width: 175px;
+}
+
+.ProductForm label {
+    font-weight: normal;
+}
+
+.ProductForm button {
+    background-color: #1C191A;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+
+    height: 65px;
+    width: 125px;
+    margin: 25px 5px 5px 5px;
+
+    border: #ecebeb;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.ProductForm button:disabled {
+    background-color: #474143;
+}
+
+.ProductForm button:hover {
+    background-color: #3C3B3C;
+    transform: scale(1.05);
+    border: 1px solid #ffffff;
+}
+
+.ProductForm button:hover:disabled {
+    background-color: #474143;
+    cursor: not-allowed;
+    transform: none;
+    border: none;
+}
+
+.ProductForm input,
+.ProductForm select,
+#currencySelect {
+    background-color: #f8f8f8;
+    border: 0;
+    height: 45px;
+    font-size: 19px;
+    font-family: Arial;
+    border-radius: 10px;
+}
+
+#currencySelect {
+    width: 165px;
+}
+
+.ProductForm select {
+    margin-left: -5px;
+    padding: 1px 2px;
+}
+
+.ProductForm select:focus {
+    border: 1px solid black;
+}
+
+
+.ProductForm input:hover,
+.ProductForm select:hover {
+    border: 0.5px solid #ccc;
+    cursor: pointer;
+}
+
+.ProductForm table tr {
+    height: 50px;
+}
+
+.SizeChartTable {
+    width: 100%;
+    height: 260px;
+    border: none;
+}
+
+#priceWOTax {
+    width: 120px;
+}
+
+
+/* Product Image Slider */
+#productSlider {
+    position: relative;
+    overflow: hidden;
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+#sliderWrapper {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+#sliderWrapper img {
+    width: 300px;
+    height: 300px;
+    flex-shrink: 0;
+    /* Prevent shrinking */
+}
+
+#prevBtn,
+#nextBtn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+#prevBtn {
+    left: 10px;
+}
+
+#nextBtn {
+    right: 10px;
+}
+
+#prevBtn:hover,
+#nextBtn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+/* Currency */
+#productPrice,
+#convertedPrice {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+
+/* Everything below for Catalog on products.php */
+.CatalogImg {
+    width: 190px !important;
+}
+
+.CatalogInfo {
+    width: 190px !important;
+    font-size: 20px !important;
+    cursor: pointer;
+}
+
+.CatalogImg img,
+#CatalogCollection img {
+    height: 190px !important;
+    width: 225px !important;
+}
+
+
+/* For glow effect */
+.CatalogRow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 20px auto;
+    width: 450px;
+    height: 225px;
+    background: #f8f8f8;
+    border-radius: 75px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: lighter;
+    transition: 1s box-shadow;
+    cursor: pointer;
+}
+
+.CatalogRow:hover {
+    box-shadow: 0 5px 35px 0px rgba(0, 0, 0, .1);
+}
+
+.CatalogRow:hover::before,
+.CatalogRow:hover::after {
+    display: block;
+    content: '';
+    position: absolute;
+    width: 450px;
+    height: 225px;
+    background: #FC4225;
+    border-radius: 75px;
+    z-index: -1;
+    animation: 0.5s clockwise ease-out;
+}
+
+.CatalogRow:hover:after {
+    background: #1F1D1C;
+    animation: 0.5s counterclockwise ease-out;
+}
+
+@keyframes clockwise {
+    0% {
+        top: -5px;
+        left: 0;
+    }
+
+    12% {
+        top: -2px;
+        left: 2px;
+    }
+
+    25% {
+        top: 0;
+        left: 5px;
+    }
+
+    37% {
+        top: 2px;
+        left: 2px;
+    }
+
+    50% {
+        top: 5px;
+        left: 0;
+    }
+
+    62% {
+        top: 2px;
+        left: -2px;
+    }
+
+    75% {
+        top: 0;
+        left: -5px;
+    }
+
+    87% {
+        top: -2px;
+        left: -2px;
+    }
+
+    100% {
+        top: -5px;
+        left: 0;
+    }
+}
+
+@keyframes counterclockwise {
+    0% {
+        top: -5px;
+        right: 0;
+    }
+
+    12% {
+        top: -2px;
+        right: 2px;
+    }
+
+    25% {
+        top: 0;
+        right: 5px;
+    }
+
+    37% {
+        top: 2px;
+        right: 2px;
+    }
+
+    50% {
+        top: 5px;
+        right: 0;
+    }
+
+    62% {
+        top: 2px;
+        right: -2px;
+    }
+
+    75% {
+        top: 0;
+        right: -5px;
+    }
+
+    87% {
+        top: -2px;
+        right: -2px;
+    }
+
+    100% {
+        top: -5px;
+        right: 0;
+    }
+}
+
+/* For arrow effect */
+.CatalogInfo span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.4s;
+}
+
+.CatalogInfo span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.CatalogRow:hover span {
+    padding-right: 25px;
+}
+
+.CatalogRow:hover span:after {
+    opacity: 1;
+    right: 0;
+}

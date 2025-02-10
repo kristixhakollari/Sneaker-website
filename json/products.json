@@ -1,0 +1,57 @@
+[
+    {
+        "pid": 101,
+        "name":"Stan Smith",
+        "description":"THESE SHOES TURN ANY LOOK INTO AN INSTANT CLASSIC.These classics capture the essential style of the 1971 original, with a minimalist leather build and clean trim.",
+        "img_path_1":"img/adidas Stan Smith.jpeg",
+        "img_path_2":"img/adidas Stan Smith 2.jpeg",
+        "price":109.99,
+        "category":"Adidas"
+
+    },
+    {
+        "pid": 102,
+        "name":"Samba",
+        "description":"SAMBA ORIGINALS.From football boots to streetwear favorites. With its clean low-top silhouette, soft leather upper with suede overlays and natural rubber outsole, the Samba is a real evergreen and fits anytime and anywhere.",
+        "img_path_1":"img/adidas Samba.jpeg",
+        "img_path_2":"img/adidas Samba 2.jpeg",
+        "price":99.99,
+        "category":"Adidas"
+    },
+    {
+        "pid": 103,
+        "name":"Gazelle",
+        "description":"A TIMELESS SNEAKER WITH CASUAL STYLE FOR EVERY DAY.Originally designed as an indoor shoe, the adidas Gazelle has become a timeless must-have in streetwear. With an upper made of high-quality, soft suede and muted colors, the classic sneaker goes perfectly with any outfit. Whether you're running errands or meeting up with friends, this retro design pays homage to the adidas archives and adds a stylish touch to your look.",
+        "img_path_1":"img/adidas Gazelle.jpeg",
+        "img_path_2":"img/adidas Gazelle 2.jpeg",
+        "price":89.99,
+        "category":"Adidas"
+    },
+    {
+        "pid": 201,
+        "name": "Air Force 1 '07",
+        "description": "The Nike Air Force 1 '07 has lost none of its charisma. The basketball original gets a fresh look and impresses with tried and tested details: durable stitched overlays, clean finishes and that certain something that gives you shine.",
+        "img_path_1": "img/Air Force.jpeg",
+        "img_path_2": "img/Air Force 2.jpeg",
+        "price": 119.99,
+        "category": "Nike"
+    },
+    {   
+        "pid": 202,
+        "name": "Air Max 270",
+        "description" : "As Nike's first everyday Air Max, the Nike Air Max 270 offers comfort and style. The design was inspired by Air Max icons and shows Nike's greatest innovation with its large window and fresh colors.",
+        "img_path_1": "img/Air Max.jpeg",
+        "img_path_2": "img/Air Max 2.jpeg",
+        "price": 149.99,
+        "category":"Nike"
+    },
+    {
+        "pid": 301,
+        "name":"Roma",
+        "description":"Born in 1968, the PUMA Roma was originally created to celebrate the Italian Euro Cup win – and become a sport-turned-street sensation overnight. Today, over 50 years later, the Roma is back with its signature sleek look and gum rubber sole.",
+        "img_path_1":"img/puma roma.jpeg",
+        "img_path_2":"img/puma roma 2.jpeg",
+        "price":89.99,
+        "category":"Puma"
+    }
+]

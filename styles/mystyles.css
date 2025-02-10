@@ -1,0 +1,569 @@
+/* General Body css */
+body{
+    margin-top: -1px;
+    margin-left: -1px;
+    margin-right: -1px;
+    overflow-x: hidden;
+}
+
+h1{ 
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+
+/* Everything below for General Navigation top & bottom bar */
+@media screen and (max-width: 479px){
+    .TableForNav{
+        display: none;
+    }
+
+    .BoxForContents{
+        margin-top: 75px !important;
+        border-radius: 0px !important;
+        height: calc(100vh - 115px);
+        justify-content: start !important;
+    }
+}
+
+@media screen and (min-width: 480px){
+    .ListForNav{
+        display: none;
+    }
+
+    .BoxForContents{
+        width: 60%;
+    }
+}
+
+.Navigation a{
+    color: black;
+    text-decoration: none;
+    margin: 10px;
+
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+
+.Navigation h1 a{
+    font-family: 'Brush Script MT', cursive;
+    font-size: 50px;
+}
+
+.ClassForNav {
+    align-items: center;
+    display: flex;
+    margin-right: 10px;
+}
+
+.Navigation{
+    display: flex;
+    align-self: flex-start;
+    justify-content: space-between;
+    padding: 10px;       
+    background-color: #f8f8f8;
+    height: 50px;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    top: 0;
+}
+
+/* Dark mode */
+.DarkMode{
+    background-color: #282828 !important;
+    color: white !important;
+}
+
+.DarkMode a{
+    text-decoration: none;
+    color: white;
+}
+
+.DarkMode input, .DarkMode select{
+    background-color: #3a3a3a !important;
+    color: white;
+}
+
+.DarkMode h2{
+    color: white;
+}
+
+#navSelect.DarkMode{
+    background-color: #282828 !important;
+}
+
+#box, #navbar, #popup, #popup2, #navSelect{
+    transition: none 0.75s ease;
+}
+
+.IndexImage.DarkMode{
+    filter: brightness(50%) contrast(150%);
+}
+
+.BackgroundImage.DarkMode{
+    filter: brightness(50%) blur(5px) contrast(150%);
+}
+
+.ToggleDarkModeButton{
+    width: fit-content !important;
+    font-size: 20px;
+    background: none !important;
+    display: flex;
+}
+
+/* for Goto Mobile view */
+#navSelect{
+    font-family: cursive;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: #f8f8f8;
+    border: none;
+    appearance: none;
+    padding: 10px;
+    margin-right: 10px;
+    text-align: right;
+}
+
+#navSelect option{
+    font-size: 17px;
+    text-align: center;
+}
+
+
+/* General Classes for all the web pages*/
+.BackgroundImage{
+    position: fixed;
+    background-image: url('../img/Sneaker.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;     
+    filter: blur(5px);
+    height: 102%;
+    width: 102%;
+    margin: -1%;
+    top: 0;
+}
+
+.BoxForContents {
+    position: relative;
+    border-radius: 10px;
+    padding: 20px;
+
+    min-width: fit-content;
+    min-height: fit-content;
+    max-width: 800px;
+    
+    background-color: #f8f8f8;
+    opacity: 99%;
+
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 100px auto auto auto;
+    display:flex;
+    flex-direction: column;
+
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+}
+
+.BoxForContents[hidden] {
+    display: none;
+    
+}
+
+/* Everything below for index.php */
+.indexBody{
+    margin-left: -1px; 
+    background-color: #f8f8f8;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    margin-top: unset !important;
+}
+
+.IndexImage{
+    object-fit: cover; 
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    width: 101%;
+    height: 101vh;
+}
+
+.BoxForPopups{
+    margin-top: 100px;
+}
+
+#popup, #popup2{
+    width: 320px;
+    border: none;
+    border-radius: 5px;  
+    text-align: center;
+    opacity: 90%;
+    position: relative;
+    margin: 20px auto;
+}
+
+#popup button, #popup2 button{
+    background-color: #FB4224;
+    color: white;
+    cursor: pointer;
+    border: #ecebeb;
+    border-radius: 10px;
+    height: 35px;
+    width: 115px;
+    margin: 5px;
+}
+
+#popup button:hover, #popup2 button:hover{
+    background-color: #FF8C00; 
+}
+
+
+
+@media screen and (min-width:700px) {
+    #popup, #popup2{
+        width: 445px;
+        height: 150px;
+    }
+}
+
+/* Everything below for login.php, register.php and customer.php*/
+
+.Labels{
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.inputBox{
+    background: #ecebeb;
+    border: #ecebeb;
+    border-radius: 10px;
+    
+    height: 35px;
+    width: 250px;
+
+    display: flex;
+    text-align: center;
+    margin: 2px auto;
+    font-size: 15px;
+}
+
+.inputButton{
+    background-color: #FB4224;
+    color: white;
+    cursor: pointer;
+
+    border: #ecebeb;
+    border-radius: 10px;
+
+    height: 35px;
+    width: 115px;
+
+    margin: 5px;
+    transition: all 0.5s ease;
+}
+
+.inputButton:disabled{
+    background-color: #F6A89E;
+}
+
+.inputButton a{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    width: 100px;
+}
+
+.inputButton:hover{
+    background-color: #FF8C00; 
+}
+
+.inputButton:disabled:hover{
+    background-color: #F6A89E;
+    cursor: not-allowed;
+}
+
+.LabelsForRequirements{
+    display: flex;
+    margin: 15px 15%;
+}
+
+label[for="hasUserFiveChar"], 
+label[for="hasUpperLower"], 
+label[for="hasPassTenChar"], 
+label[for="isBothPassSame"]{
+    display: block;
+    text-align: justify;
+    color: red; /* to be changed in global.js */
+    font-weight: bold;
+    margin: 7px auto;
+    transition: all 0.5s ease;
+}
+
+label[for="CheckLogin"] {
+    color: red;
+    font-weight: bold;
+    font-size: 16px;
+    
+    display: none; /* to be changed in global.js */
+}
+
+
+
+/* Everything below for logout.php */
+.loginLink{
+    color: #FB4224 !important;
+    text-decoration:none; 
+}
+
+.loginLink:hover{
+    color: #FF8C00 !important; 
+}
+
+
+
+/* Everything below for about.php */
+.StoreInformation{
+    font-weight: normal;
+    font-family: cursive;
+}
+
+/* Everything below for categories.php */
+
+.CategoryImg{ /* Col1 */
+    height: 150px;
+    width: 150px;
+}
+
+.CategoryImg img{
+    height: 150px;
+    width: 150px;
+    border-radius: 90px;
+    border: 2px solid white;
+}
+
+.CategoryIntro{ /* Col2 */
+    height: 150px;
+    width: 100%;
+    padding-left: 15px;
+    display: block;
+}
+
+
+
+.CategoryRow{
+    height: 170px;
+    transition: all 0.3s ease;
+}
+
+.CategoryRow:hover{
+    cursor: pointer;
+    transform: scale(1.03);
+}
+
+.ListForMainCategory table{
+    border-collapse: collapse;
+}
+
+.ListForMainCategory{
+    list-style-type: none;
+    text-align: left;
+    padding: 0;
+}
+
+.ListForSubCategory{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.ListForSubCategory li{
+    margin: 5px 25px 5px 0px;
+    display: inline;
+}
+
+@media screen and (max-width: 479px) {
+    .ListForSubCategory li{
+        display: block;
+    }
+}
+
+.ListForSubCategory a{
+    color: #FF8C00;
+    text-decoration:none; 
+}
+
+.ListForSubCategory a:hover{
+    color: #FB4224;
+}
+
+
+
+/* Everything Below of Catalog.php */
+
+.CatalogImg img, #CatalogCollection img{
+    height: 125px;
+    width: 150px;
+    object-fit: cover;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+.CatalogImg button, #CatalogCollection button{
+    border: none;
+    background-color: #f8f8f8;
+    border-radius: 50px;
+}
+
+.CatalogInfo{
+    width: 100px;
+}
+
+.CatalogAddto button{
+    background-color: #FB4224;
+    color: white;
+    cursor: pointer;
+    border: #ecebeb;
+    border-radius: 10px;
+    height: 35px;
+    width: 115px;
+    margin: 5px;
+}
+
+.CatalogAddto button:hover{
+    background-color: #FF8C00; 
+}
+
+.BoxForContents.Collection{
+    margin: 20px auto auto auto !important;
+    min-width: 401px !important;
+}
+
+
+/* Everything below for cart.php */
+.TableForCart {
+    font-family: Arial, sans-serif;
+    background: #f9f9f9;
+}
+.TableForCart {
+    width: 100%;
+    margin: 20px 0;
+    border-collapse: collapse;
+}
+.TableForCart th, .TableForCart td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+.TableForCart th {
+    background-color: #efefef;
+}
+img.trash-icon {
+    filter: invert();
+    height: 25px;
+}
+.cart-button{
+    background-color: #FB4224;
+    color: white;
+    cursor: pointer;
+
+    border: #ecebeb;
+    border-radius: 10px;
+
+    height: fit-content;
+    width: fit-content;
+
+    margin: 5px;
+    transition: all 0.5s ease;
+}
+
+/* Everything Below for orders.php */
+.BoxForContents.admin{
+    margin-top: 20px !important;
+}
+
+/* Everything Below for reviews.php */
+h1 {
+    font-size: 32px;
+    color: #FB4224;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 24px;
+    color: #333;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.review {
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.review h3 {
+    font-size: 20px;
+    color: #FF8C00;
+    margin-bottom: 10px;
+}
+
+.review p {
+    font-size: 16px;
+    color: #555;
+}
+
+hr {
+    border-top: 1px solid #ddd;
+    margin: 30px 0;
+}
+
+/* Everything Below for Submit-Review form on reviews.php */
+form {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+form label {
+    display: block;
+    font-size: 18px;
+    margin: 10px 0;
+    color: #333;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+form textarea {
+    resize: vertical;
+}
+
+form button {
+    background-color: #FB4224;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 10px 20px;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #FF8C00;
+}
