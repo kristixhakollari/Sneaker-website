@@ -38,7 +38,7 @@ Developed collaboratively in a **3-person team**, focusing on clean design and s
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/kristixhakollari/sneaker-ecommerce.git
-   cd sneaker-ecommerce
+   git clone https://github.com/kristixhakollari/Sneaker-website.git
+   cd sneaker-website
 
 
