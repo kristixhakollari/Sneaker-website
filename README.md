@@ -1,6 +1,6 @@
 # 👟 Sneaker E-Commerce Website
 
-A responsive and modern **E-Commerce web application** for browsing, filtering, and purchasing sneakers — built using **HTML, CSS, and JavaScript**.  
+A responsive and modern **E-Commerce web application** for browsing, filtering, and purchasing sneakers — built using **HTML, CSS, JavaScript and PHP**.  
 Developed collaboratively in a **3-person team**, focusing on clean design and smooth user interaction.
 
 ---
