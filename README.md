@@ -41,4 +41,19 @@ Developed collaboratively in a **3-person team**, focusing on clean design and s
    git clone https://github.com/kristixhakollari/Sneaker-website.git
    cd sneaker-website
 
+2. Install Xampp
+3. Go to your xampp folder, open htdocs folder
+4. Create a folder named "step-x"
+5. Extract the contents of the zip inside this folder.
+6. Start Xampp control panel. Start Apache and MySQL.
+7. Go to your browser and open this link : http://localhost/step-x/admin/create_databse.php
+8. Your databse and the necessary phpMyAdmin should be created automatically on your system
+9. Now open this link : http://localhost/step-x/
+10. Try and test it as you would be using a new website. Register your account, login, add to cart, checkout, do whatever you like.
+11. if you login as admin, you would be redirected to the admin panel automatically, here you can see the orders and customer info.
+
+*Admin credentials:*
+- username: Admin
+- password: admin12345
+
 
